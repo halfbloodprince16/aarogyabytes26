@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAROGYA.BYTES 2026 — Digital Inauguration</title>
+<link rel="stylesheet" href="style.css">
+<!-- QR code generator, loaded from cdnjs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="paper-texture" aria-hidden="true"></div>
+
+<!-- ============================ HEADER ============================ -->
+<header class="event-header">
+  <div class="crest-row">
+    <div class="crest" aria-hidden="true">AFMS</div>
+
+    <div class="title-block">
+      <h1 class="event-title">AAROGYA.BYTES 2026</h1>
+      <p class="event-subtitle">&lsquo;Seminar on Digital Health&rsquo;</p>
+      <p class="event-meta">
+        01&ndash;02 Aug 2026, Seminar Room 1<br>
+        United Service Institution of India, New Delhi
+      </p>
+      <p class="event-org">Organised By<br>Office of DGAFMS</p>
+    </div>
+
+    <div class="crest right" aria-hidden="true">USI</div>
+  </div>
+
+  <div class="taglines">
+    <span class="rule" aria-hidden="true"></span>
+    <span class="tagline orange">Viksit Bharat @ 2047</span>
+    <span class="tagline green">AFMS @ 99</span>
+    <span class="rule" aria-hidden="true"></span>
+  </div>
+</header>
+
+<!-- ============================ STAGE ============================ -->
+<main class="stage-wrap">
+  <div class="stage" id="stage">
+
+    <!-- Backdrop / video area, revealed once curtains open -->
+    <div class="backdrop" id="backdrop">
+      <p class="backdrop-placeholder" id="backdropPlaceholder">
+        Inauguration video will appear here.<br>
+      </p>
+      <video id="inaugurationVideo" playsinline muted style="display:none;">
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button class="sound-btn" id="soundBtn" type="button">🔈 Tap for sound</button>
+
+    <!-- Curtains -->
+    <div class="curtain curtain-left" aria-hidden="true"></div>
+    <div class="curtain curtain-right" aria-hidden="true"></div>
+    <div class="valance" aria-hidden="true"></div>
+
+    <!-- QR launch button -->
+    <button class="qr-launch" id="qrLaunch" type="button" aria-label="Tap to inaugurate the seminar">
+      <span class="qr-plate">
+        <span id="qrcode"></span>
+      </span>
+      <span class="qr-caption">Tap / Scan to Inaugurate</span>
+      <span class="qr-sub">AAROGYA.BYTES 2026</span>
+    </button>
+
+    <!-- Effects overlay for crackers / confetti -->
+    <canvas id="effectsCanvas"></canvas>
+  </div>
+</main>
+
+<p class="footnote">Digital Ribbon-Cutting &middot; Office of DGAFMS &middot; 2026</p>
+
+<script src="script.js"></script>
+</body>
+</html>

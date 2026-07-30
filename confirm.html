@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session Inaugurated — AAROGYA.BYTES 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .confirm-wrap{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:32px 24px;
+    position:relative;
+    z-index:1;
+  }
+  .check-badge{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #fff8ea, var(--paper-2));
+    border:3px solid var(--green);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+    box-shadow:0 0 0 6px rgba(46,125,50,0.12), 0 8px 20px rgba(0,0,0,0.15);
+    animation:pop 0.6s cubic-bezier(.34,1.56,.64,1);
+  }
+  .check-badge svg{ width:52px; height:52px; }
+  @keyframes pop{
+    0%{ transform:scale(0); opacity:0; }
+    70%{ transform:scale(1.1); opacity:1; }
+    100%{ transform:scale(1); }
+  }
+  .confirm-title{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    color:var(--brown);
+    font-size:clamp(1.5rem, 6vw, 2.1rem);
+    margin:0 0 10px;
+  }
+  .confirm-text{
+    color:var(--blue);
+    font-weight:700;
+    font-size:1.05rem;
+    max-width:340px;
+    line-height:1.5;
+    margin:0 0 22px;
+  }
+  .confirm-meta{
+    font-size:0.85rem;
+    color:var(--blue);
+    opacity:0.75;
+    line-height:1.6;
+  }
+  .confirm-taglines{ margin-top:26px; }
+</style>
+</head>
+<body>
+
+<div class="paper-texture" aria-hidden="true"></div>
+
+<div class="confirm-wrap">
+  <div class="check-badge" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 13l5 5L20 6" stroke="#2E7D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1 class="confirm-title">Session Inaugurated<br>Successfully</h1>
+  <p class="confirm-text">
+    Thank you for participating in the digital ribbon-cutting of
+    <strong>AAROGYA.BYTES 2026</strong>.
+  </p>
+
+  <p class="confirm-meta">
+    &lsquo;Seminar on Digital Health&rsquo;<br>
+    01&ndash;02 Aug 2026 &middot; Seminar Room 1<br>
+    United Service Institution of India, New Delhi<br>
+    Organised By Office of DGAFMS
+  </p>
+
+  <div class="taglines confirm-taglines">
+    <span class="tagline orange">Viksit Bharat @ 2047</span>
+    <span class="tagline green">AFMS @ 99</span>
+  </div>
+</div>
+
+</body>
+</html>
